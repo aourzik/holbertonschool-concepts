@@ -1,10 +1,14 @@
 #include <stdio.h>
 
-int main(int argc, **argv)
+int main(int argc, char **argv)
 {
-    for (i = 0; i < argc; i++)
+   int i = 0;
+
+   void(argc);
+   while (argv[i] != NULL)
     {
-        printf("argv[%d] = %s\n", i, argv[i]);
+        printf("%s\n", argv[i]);
+        i++;
     }
     return (0);
 }
