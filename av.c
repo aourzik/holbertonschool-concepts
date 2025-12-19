@@ -1,11 +1,11 @@
 #include <stdio.h>
 
-int main(int argc, char **argv)
+int av(int argc, char **argv)
 {
-   int i = 0;
+    int i = 0;
 
-   (void)argc;
-   while (argv[i] != NULL)
+    (void)argc;
+    while (argv[i] != NULL)
     {
         printf("%s\n", argv[i]);
         i++;

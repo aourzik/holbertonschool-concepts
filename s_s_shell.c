@@ -5,7 +5,7 @@ int main(void)
     char *line;
     char **av;
 
-    wile(1)
+    while (1)
     {
         printf("MySuperSimpleShell$ ");
 

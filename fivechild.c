@@ -3,7 +3,7 @@
 #include <unistd.h>
 #include <sys/wait.h>
 
-int main(void)
+int five_child(void)
 {
     pid_t pid;
     int i;
