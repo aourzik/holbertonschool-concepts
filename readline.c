@@ -1,24 +1,14 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include "s_s_shell.h"
 
-int main(void)
+char *read_line(void)
 {
     char *line = NULL;
     size_t len = 0;
-    ssize_t read;
 
-    while (1)
+    if (getline(&line, &len, stdin) == -1)
     {
-        printf("$ ");
-        read = getline(&line, &len, stdin);
-
-        if (read == -1)
-        {
-            printf("EOF Error");
-            break;
-        }
+        free(line);
+        return (NULL);
     }
-
-    free(line);
-    return (0);
+    return (line);
 }

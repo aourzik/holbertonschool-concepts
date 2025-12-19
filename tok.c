@@ -1,6 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+#include "s_s_shell.h"
 
 char **command_line_to_av(char *line)
 {
@@ -41,5 +39,3 @@ char **command_line_to_av(char *line)
     av[i] = NULL;
     return (av);
 }
-
-
