@@ -4,7 +4,7 @@ char **command_line_to_av(char *line)
 {
     char **av = NULL;
     char *token;
-    int i;
+    int i = 0;
     int words = 0;
     char *tmp;
 
@@ -24,6 +24,10 @@ char **command_line_to_av(char *line)
     free(tmp);
 
     if (words == 0)
+        return (NULL);
+
+    av = malloc(sizeof(char *) * (words + 1));
+    if (!av)
         return (NULL);
 
     token = strtok(line, " \t\n");
