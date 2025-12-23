@@ -11,7 +11,7 @@
 /* Read input */
 char *read_line(void);
 
-/* Parsing */
+/* Parsing : analyse syntaxe */
 char **command_line_to_av(char *line);
 
 /*Execution*/
